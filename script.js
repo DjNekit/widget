@@ -26,7 +26,7 @@ define(['jquery', 'underscore', 'twigjs'], function ($, _, Twig) {
         csvFile += processRow(rows[i]);
       }
   
-      var blob = new Blob([csvFile], { type: 'text/csv;charset=utf-8;' });
+      var blob = new Blob([csvFile], { type: 'text/csv;charset=utf-8,\ufeff' });
       if (navigator.msSaveBlob) { // IE 10+
         navigator.msSaveBlob(blob, filename);
       } else {
