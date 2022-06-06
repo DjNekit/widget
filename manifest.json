@@ -3,7 +3,7 @@
     "name": "widget.name",
     "description": "widget.description",
     "short_description": "widget.short_description",
-    "version": "1.0.51",
+    "version": "1.0.52",
     "interface_version": 2,
     "init_once": false,
     "locale": [
@@ -34,12 +34,17 @@
     "login": {
       "name": "settings.login",
       "type": "text",
-      "required": true
+      "required": false
+    },
+    "api_key": {
+      "name": "settings.api_key",
+      "type": "text",
+      "required": false
     },
     "account": {
       "name": "settings.account",
       "type": "text",
-      "required": true
+      "required": false
     }
   }
 }

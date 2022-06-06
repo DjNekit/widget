@@ -47,19 +47,29 @@ define(['jquery', 'underscore', 'twigjs'], function ($, _, Twig) {
     this.callbacks = {
       render: function () {
         console.log('render')
-        return true
+        return true;
       },
       init: _.bind(function () {
         console.log('init')
-        return true
+
+        return true;
       }, this),
 
       bind_actions: function () {
         console.log('bind_actions')
         return true
       },
+      settings: function () {
+        return true;
+      },
+      onSave: function () {
+        alert('click');
+        return true;
+      },
+      destroy: function () {
 
-     
+      },
+      
       leads: {
         selected: function () {
           self.widgetsOverlay(false); 
